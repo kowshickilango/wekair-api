@@ -1,0 +1,1 @@
+{"version":3,"file":"create-vehicle.dto.js","sourceRoot":"","sources":["../../../src/vehicle/dto/create-vehicle.dto.ts"],"names":[],"mappings":";;;;;;;;;;;;AAAA,qDAA6C;AAE7C,MAAM,YAAY,GAAG,CAAC,aAAa,EAAE,eAAe,EAAE,cAAc,CAAU,CAAC;AAI/E,MAAa,gBAAgB;CAS5B;AARC;IAAC,IAAA,4BAAU,GAAE;;mDACK;AAElB;IAAC,IAAA,4BAAU,GAAE;;8CACM;AAEnB;IAAC,IAAA,4BAAU,GAAE;;2DACa;AAR5B,4CASC"}
