@@ -7,25 +7,22 @@ export type EmissionTestDocument = EmissionTest & Document;
 
 @Schema({ timestamps: true })
 export class EmissionTest {
-  @Prop({ required: true, index: true })
+  @Prop({index: true })
   catalyticConverter: boolean;
 
-  @Prop({ required: true })
+  @Prop()
   CO2: number;
 
-  @Prop({ required: true })
+  @Prop()
   O2: boolean;
 
-  @Prop({ required: true })
+  @Prop({  })
   airFilter: boolean;
 
-  @Prop({ required: true })
-  otherIssue: boolean;
-
-  @Prop({ type: Types.ObjectId, ref: Vehicle.name, required: true })
+  @Prop({ type: Types.ObjectId, ref: Vehicle.name  })
   vehicle: Types.ObjectId;
 
-  @Prop({ type: Types.ObjectId, ref: User.name, required: true })
+  @Prop({ type: Types.ObjectId, ref: User.name  })
   owner: Types.ObjectId;
 }
 
