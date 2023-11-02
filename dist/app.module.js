@@ -17,7 +17,13 @@ const mongoose_1 = require("@nestjs/mongoose");
 const vehicle_module_1 = require("./vehicle/vehicle.module");
 const emission_tests_module_1 = require("./emission-tests/emission-tests.module");
 const mail_module_1 = require("./mail/mail.module");
+const logger_middleware_1 = require("./middleware/logger.middleware");
 let AppModule = class AppModule {
+    configure(consumer) {
+        consumer
+            .apply(logger_middleware_1.LoggerMiddleware)
+            .forRoutes({ path: '*', method: common_1.RequestMethod.ALL });
+    }
 };
 AppModule = __decorate([
     (0, common_1.Module)({
