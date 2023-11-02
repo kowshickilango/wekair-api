@@ -23,6 +23,7 @@ export class EmissionTestsController {
     @Body() emissionTestDto: EmissionTestDto,
     @GetUser() user: UserDocument,
   ) {
+    console.log("req", emissionTestDto)
     return this.emissionTestsService.create(emissionTestDto, user);
   }
 
